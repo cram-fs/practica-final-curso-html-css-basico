@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* h1 {
+h1 {
     font-size: 1.9rem;
 }
 h2 {
@@ -14,7 +14,7 @@ h3 {
 }
 a {
     text-decoration: none;
-} */
+}
 p {
     color: #636363;
 }
@@ -44,8 +44,8 @@ header .logo img {
 header .logo span {
     color: mediumvioletred;
 
-    /* font-size: 18px;
-    font-weight: 700; */
+    font-size: 18px;
+    font-weight: 700;
 }
 
 
@@ -54,13 +54,13 @@ header nav ul {
 }
 
 header nav li {
-    display: inline;
+    display: inline-block;
     padding: 5px 10px;
 }
 
-/* header nav li a:hover {
+header nav li a:hover {
     color: mediumvioletred;
-} */
+}
 
 header nav li a {
     color: white;
@@ -104,7 +104,7 @@ header .banner-texto h1 {
 .inicio {
     padding: 50px 230px;
 
-    /* text-align: center; */
+    text-align: center;
 }
 
 .inicio h1 {
@@ -132,7 +132,7 @@ header .banner-texto h1 {
 
 .sobre-nosotros article .detalle {
     padding: 75px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .sobre-nosotros article .detalle a {
@@ -144,10 +144,10 @@ header .banner-texto h1 {
     /* line-height: 50px; */
 }
 
-/* .sobre-nosotros article .detalle a:hover {
+.sobre-nosotros article .detalle a:hover {
     background-color: rgb(11, 11, 155);
     font-weight: 500;
-} */
+}
 
 /* #accion {
 
@@ -181,7 +181,7 @@ header .banner-texto h1 {
     padding-top: 25px;
     padding-bottom: 25px;
     
-    /* text-align: center; */
+    text-align: center;
 }
 
 .suscribirme h2 {
@@ -191,7 +191,7 @@ header .banner-texto h1 {
 
 .suscribirme p {
     color: white;
-    /* font-size: 0.85rem; */
+    font-size: 0.85rem;
 }
 
 .suscribirme form input {
@@ -215,7 +215,7 @@ header .banner-texto h1 {
     background-color: darkmagenta;
     color: white;
     border: none;
-    /* font-size: 1rem; */
+    font-size: 1rem;
 }
 
 
@@ -228,7 +228,7 @@ footer {
 
 footer address {
     color: lightskyblue;
-    /* text-align: center;
+    text-align: center;
     font-size: 0.8rem;
-    font-style: normal; */
+    font-style: normal;
 }
