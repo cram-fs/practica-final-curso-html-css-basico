@@ -94,16 +94,18 @@ header .banner img {
 .sobre-nosotros article {
     background-color: rgb(255, 255, 255);
     border: 1px solid lightgray;
-    width: 950px;
+    /* width: 950px; */
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 
     display: flex;
+    max-width: 950px;
+    align-items: flex-start;
 }
 
 .sobre-nosotros article img {
-    width: 450px;
+    width: 50%;
 }
 
 .sobre-nosotros article .detalle {
@@ -133,9 +135,11 @@ header .banner img {
 /* Galeria de fotos */
 .galeria {
     padding-top: 25px;
-    width: 950px;
+    /* width: 950px; */
     margin: 0 auto;
     margin-bottom: 35px;
+
+    max-width: 950px;
 }
 
 .galeria h2 {
@@ -152,7 +156,7 @@ header .banner img {
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
-    
+
     text-align: center;
 }
 
@@ -164,6 +168,12 @@ header .banner img {
 .suscribirme p {
     color: white;
     font-size: 0.85rem;
+}
+
+.suscribirme form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .suscribirme form input {
@@ -195,7 +205,7 @@ header .banner img {
 footer {
     background-color: navy;
     padding: 15px 0;
-    
+
 }
 
 footer address {
@@ -203,4 +213,83 @@ footer address {
     text-align: center;
     font-size: 0.8rem;
     font-style: normal;
+}
+
+@media screen and (max-width: 700px) {
+
+    .inicio {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .sobre-nosotros article .detalle {
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 13px;
+    }
+
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav li {
+        display: block;
+
+        text-align: center;
+    }
+
+    header .banner {
+        height: auto;
+    }
+
+    header .banner img {
+        height: auto;
+    }
+
+    .sobre-nosotros article img {
+        width: 100%;
+    }
+
+    .sobre-nosotros article {
+        flex-direction: column;
+    }
+
+    #accion {
+        flex-direction: column;
+    }
+
+    .suscribirme p {
+        font-size: 12px;
+    }
+
+    .suscribirme form {
+        flex-direction: column;
+    }
+
+    .suscribirme form #name {
+        width: 275px;
+    }
+
+    .suscribirme form div {
+        margin-bottom: 5px;
+    }
+
+    footer address {
+        font-size: 11px;
+    }
 }
