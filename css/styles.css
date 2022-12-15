@@ -68,38 +68,12 @@ header nav li a {
 
 header .banner {
   height: 450px;
-
-  /* background-color: rgba(20, 20, 20, 0.35);
-
-  position: relative; */
 }
 header .banner img {
     width: 100%;
     height: 450px;
-    z-index: -1;
-    position: relative;
+
 }
-/* 
-header .banner-texto {
-
-    width: 100%;
-    text-align: center;
-
-    position: absolute;
-    top: 180px;
-    left: 0;
-}
-
-header .banner-texto p {
-    color: white;
-    font-size: 1.2rem;
-}
-header .banner-texto h1 {
-    color: white;
-
-    font-size: 2.7rem;
-    font-weight: 500;
-} */
 
 .inicio {
     padding: 50px 230px;
@@ -171,12 +145,6 @@ header .banner-texto h1 {
 .galeria img{
     width: 100%;
 }
-
-/* .galeria img:hover{
-    transform: scale(1.02);
-    transition: 0.1s;
-    cursor: zoom-in;
-} */
 
 /* Suscribirme */
 .suscribirme {
