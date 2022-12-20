@@ -17,6 +17,7 @@ a {
 }
 p {
     color: #636363;
+    font-size: 1rem;
 }
 
 
@@ -94,16 +95,17 @@ header .banner img {
 .sobre-nosotros article {
     background-color: rgb(255, 255, 255);
     border: 1px solid lightgray;
-    width: 950px;
+    max-width: 950px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 
     display: flex;
+    align-items: flex-start;
 }
 
 .sobre-nosotros article img {
-    width: 450px;
+    width: 50%;
 }
 
 .sobre-nosotros article .detalle {
@@ -133,9 +135,11 @@ header .banner img {
 /* Galeria de fotos */
 .galeria {
     padding-top: 25px;
-    width: 950px;
+    /* width: 950px; */
     margin: 0 auto;
     margin-bottom: 35px;
+
+    max-width: 950px;
 }
 
 .galeria h2 {
@@ -164,6 +168,11 @@ header .banner img {
 .suscribirme p {
     color: white;
     font-size: 0.85rem;
+}
+
+.suscribirme form {
+    display: flex;
+    justify-content: center;
 }
 
 .suscribirme form input {
@@ -203,4 +212,71 @@ footer address {
     text-align: center;
     font-size: 0.8rem;
     font-style: normal;
+}
+
+/* mobile 400px  mediano 700px large 1050px */
+
+@media screen and (max-width: 700px) {
+    .inicio {
+        padding: 50px 30px;
+    }
+
+    .sobre-nosotros article .detalle {
+        padding: 3px 40px;
+    }
+
+    .suscribirme form {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    header .banner img {
+        height: auto;
+    }
+
+    header .banner {
+        height: auto;
+    }
+
+    html {
+        font-size: 14px;
+    }
+    .sobre-nosotros article img {
+        width: 100%;
+    }
+
+    .sobre-nosotros article {
+        flex-direction: column;
+    }
+
+    #accion {
+        flex-direction: column;
+    }
+
+    .suscribirme form {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .suscribirme form div {
+        margin-bottom: 5px;
+        width: 90%;
+    }
+    .suscribirme form div input{
+        width: 70%;
+    }
 }
