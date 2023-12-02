@@ -1,4 +1,4 @@
-# Práctiva final - curso html css (básico)
+# Práctica final - curso html css (básico)
 
 Esta es una página web que se hizo como práctica final del curso de capacitación de "html y css básico" en el Laboratorio de Informática y Sistemas de la UMSS.
 
